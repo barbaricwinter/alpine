@@ -17,6 +17,6 @@
 
 apk update &&
     apk upgrade &&
-    adduser -D &&
+    adduser -D user &&
     apk add sudo &&
     rm /var/cache/apk/*
