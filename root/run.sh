@@ -20,5 +20,6 @@ apk update &&
     adduser -D user &&
     apk add sudo &&
     mkdir /home/user/.ssh &&
+    chown user:user /home/user/.ssh &&
     chmod 0700 /home/user/.ssh &&
     rm /var/cache/apk/*
