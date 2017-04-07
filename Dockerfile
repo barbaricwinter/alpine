@@ -19,3 +19,5 @@ COPY root /opt/docker/
 RUN ["/bin/sh", "/opt/docker/run.sh"]
 ENTRYPOINT ["/bin/sh"]
 CMD []
+USER user
+VOLUME /home/user/.ssh
